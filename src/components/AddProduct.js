@@ -38,7 +38,7 @@ const AddProduct = ({ onAdd }) => {
                 <label>Categorie</label>
                 <input type="text" value={category} onChange={(e) => setCategory(e.target.value)} placeholder="Categorie" />
             </div>
-            <input type="submit" className="btn btn-gray btn-block mt-4" value="Enregistrer le produit"/>
+            <input type="submit" className="btn btn-teal btn-block mt-4" value="Enregistrer le produit"/>
         </form>
     );
 };

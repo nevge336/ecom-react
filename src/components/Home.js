@@ -1,7 +1,7 @@
 import Navbar from "./Navbar";
 
 function Home() {
-    const title = "Art Pop!".split('').map((letter, index) => (
+    const title = "ArtPop!".split('').map((letter, index) => (
         <span key={index} style={{ animationDelay: `${index * 0.5}s` }} className="color-change">
             {letter}
         </span>

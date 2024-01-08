@@ -1,0 +1,46 @@
+{
+  "products": [
+    {
+      "id": 5,
+      "name": "Produit cinq",
+      "description": "Ceci est le produit 5",
+      "price": 59.99,
+      "category": "Categorie 5"
+    },
+    {
+      "id": 6,
+      "name": "Produit 6",
+      "description": "Ceci est le produit 6",
+      "price": 69.99,
+      "category": "Categorie 6"
+    },
+    {
+      "name": "Curry",
+      "description": "Bon plat cuisiné",
+      "price": "100.99",
+      "category": "Cuisine",
+      "id": 7
+    },
+    {
+      "name": "Pizza",
+      "description": "asdf",
+      "price": "19.44",
+      "category": "cuisine",
+      "id": 9
+    },
+    {
+      "name": "Pizza fromage",
+      "description": "fromage",
+      "price": "11.44",
+      "category": "Cuisine",
+      "id": 10
+    },
+    {
+      "id": 11,
+      "name": "Arbre vivant",
+      "description": "mort",
+      "price": "22.33",
+      "category": "végétal"
+    }
+  ]
+}
