@@ -10,7 +10,7 @@ function Navbar() {
                         className={({ isActive }) =>
                             `font-bold text-lg hover:text-orange-500 ${isActive ? 'underline text-orange-500' : ''}`}
                     >
-                        Home
+                        Acceuil
                     </NavLink>
                 </li>
                 <li>
@@ -19,7 +19,7 @@ function Navbar() {
                         className={({ isActive }) =>
                             `font-bold text-lg hover:text-orange-500 ${isActive ? 'underline text-orange-500' : ''}`}
                     >
-                        Products
+                        Produits
                     </NavLink>
                 </li>
             </ul>

@@ -1,7 +1,7 @@
 import Product from './Product';
 import { FaTimes } from 'react-icons/fa';
 
-const ProductList = ({ products, onDelete }) => {
+const ProductList = ({ products, onDelete, onUpdate }) => {
     return (
         products.length > 0 ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-12">
@@ -9,7 +9,8 @@ const ProductList = ({ products, onDelete }) => {
                     <Product
                         key={product.id}
                         product={product}
-                        onDelete={onDelete} />
+                        onDelete={onDelete}
+                        onUpdate={onUpdate} />
                 ))}
             </div>
         ) : (

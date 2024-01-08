@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Modal from 'react-modal';
 import Header from './components/Header';
 import ProductList from './components/ProductList';
 import AddProduct from './components/AddProduct';
@@ -6,6 +7,7 @@ import Home from './components/Home';
 import Navbar from './components/Navbar'; 
 import { useState } from 'react';
 
+Modal.setAppElement('#root');
 
 function App() {
     const [products, setProducts] = useState([
@@ -29,6 +31,9 @@ function App() {
 
     const [showAddProduct, setShowAddProduct] = useState(false)
 
+    const updateProduct = (id, updatedProduct) => {
+        setProducts(products.map((product) => product.id === id ? updatedProduct : product));
+    }
 
     return (
         <Router>
@@ -42,7 +47,7 @@ function App() {
                             <div className='max-w-screen-md mx-auto'>
                                 {showAddProduct && <AddProduct onAdd={addProduct} />}
                             </div>
-                            <ProductList products={products} onDelete={deleteProduct} />
+                            <ProductList products={products} onDelete={deleteProduct} onUpdate={updateProduct} />
                         </>
                     } />
                 </Routes>

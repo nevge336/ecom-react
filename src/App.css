@@ -4,8 +4,14 @@
 .btn-blue {
   @apply bg-blue-500 hover:bg-blue-800;
 }
+.btn-orange {
+  @apply bg-orange-500 hover:bg-orange-800;
+}
 .btn-green {
   @apply bg-green-500 hover:bg-green-800;
+}
+.btn-teal {
+  @apply bg-teal-500 hover:bg-teal-800;
 }
 .btn-red {
   @apply bg-red-600 hover:bg-red-700;
@@ -41,18 +47,23 @@
 }
 
 .title {
-  @apply absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] text-white text-8xl font-bold;
+  @apply absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] text-white text-8xl;
 }
 
 @keyframes color-change {
   0% { color: red; }
+  10% { color: transparent; }
   20% { color: orange; }
   40% { color: yellow; }
+  50% { color: transparent;}
   60% { color: green; }
   80% { color: blue; }
+  90% { color: transparent; }
   100% { color: purple; }
 }
 
 .color-change {
-  animation: color-change 20s steps(6) infinite;
+  animation: color-change 50s steps(6) infinite;
 }
+
+
