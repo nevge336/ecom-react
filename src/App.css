@@ -36,4 +36,23 @@
 }
 
 
+.hero {
+  @apply bg-cover relative h-screen;
+}
 
+.title {
+  @apply absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] text-white text-8xl font-bold;
+}
+
+@keyframes color-change {
+  0% { color: red; }
+  20% { color: orange; }
+  40% { color: yellow; }
+  60% { color: green; }
+  80% { color: blue; }
+  100% { color: purple; }
+}
+
+.color-change {
+  animation: color-change 20s steps(6) infinite;
+}

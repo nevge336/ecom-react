@@ -4,7 +4,7 @@ import Button from './Button'
 const Header = (props) => {
 
     return (
-        <header className="flex justify-between items-center mb-8">
+        <header className="flex justify-between items-center mb-2 mt-12 p-12">
             <h1 className="text-5xl text-center">{props.title}</h1>
 
             <Button text={props.showAdd ? 'Fermer' : 'Ajouter'} 
@@ -14,7 +14,7 @@ const Header = (props) => {
     );
 }
 Header.defaultProps = {
-    title: 'E-commerce avec React'
+    title: 'Liste des produits'
 }
 Header.propTypes = {
     title: PropTypes.string.isRequired

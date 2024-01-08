@@ -18,12 +18,10 @@ const AddProduct = ({ onAdd }) => {
         setDescription('')
         setPrice('')
         setCategory('')
-
-
     }
 
     return (
-        <form className="add-form" onSubmit={handleSubmit}>
+        <form className="add-form p-20" onSubmit={handleSubmit}>
             <div className="form-control">
                 <label>Nom</label>
                 <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Nom" />
