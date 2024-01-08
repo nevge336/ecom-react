@@ -1,3 +1,8 @@
+
+https://github.com/nevge336/ecom-react/assets/135233649/2f0d27fe-61c6-48ee-8a58-e5a6bbb73d62
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -5,6 +10,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
+
 
 ### `npm start`
 
